@@ -18,16 +18,18 @@ export default function Home() {
     <div className="container">
       <section>
         <div className="grid">
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href='/posts/first-post'>
+              <a className='card'>
+              <h3>First Post &rarr;</h3>
+              <p>Watch this space!</p>
+            </a>
+          </Link>
         </div>
       </section>
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
+          min-height: 50vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
